@@ -9,15 +9,21 @@ const Contact = () => {
   const [message, setMessage] = useState("");
 
   const sendEmail = (e) => {
+    console.log("inside send email");
     e.preventDefault();
     emailjs
-      .sendForm("gmail", "template_luql7ys", e.target, "70uZ_gAKUBYhC-mMR")
+      .sendForm(
+        "service_smqnb9h", //service id
+        "template_luql7ys", //template id
+        e.target,
+        "70uZ_gAKUBYhC-mMR"
+      )
       .then(
         (result) => {
           console.log("res", result.text);
         },
         (error) => {
-          console.log(error.text);
+          console.log("err", error.text);
         }
       );
     // e.target.reset();
@@ -27,13 +33,8 @@ const Contact = () => {
   return (
     <section className="section contact center" id="contact">
       <h2 className="section__title">Contact</h2>
-      <form
-        onSubmit={() => {
-          if (email && name && message) {
-            sendEmail();
-          }
-        }}
-      >
+      {console.log({ email, name, message })}
+      <form onSubmit={sendEmail}>
         <input
           type="text"
           name="name"
