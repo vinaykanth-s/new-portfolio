@@ -21,6 +21,7 @@ const Contact = () => {
       .then(
         (result) => {
           console.log("res", result.text);
+          alert("Email Sent Successfully");
         },
         (error) => {
           console.log("err", error.text);
