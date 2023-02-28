@@ -22,6 +22,13 @@ const about = {
 const projects = [
   // projects can be added an removed
   // if there are no projects, Projects section won't show up
+    {
+    name: "eCommerce App",
+    description: "A typical ecommerce application where users can add products to cart and place an order.",
+    stack: ["React", "ReduxToolKit", "Firebase", "Material UI"],
+    sourceCode: "https://github.com/vinaykanth-s/ecommerce-react-app",
+    livePreview: "https://vinay-react-ecommerce.netlify.app/",
+  },
   {
     name: "Project Manager Dashboard",
     description: "Using this application a project manager can add, edit project & team details.",
@@ -29,13 +36,7 @@ const projects = [
     sourceCode: "https://github.com/vinaykanth-s/project-manager-dashboard",
     livePreview: "https://vk-projects-manager.netlify.app/",
   },
-  {
-    name: "eCommerce App",
-    description: "A typical ecommerce application where users can add products to cart and place an order.",
-    stack: ["React", "ReduxToolKit", "Firebase", "Material UI"],
-    sourceCode: "https://github.com/vinaykanth-s/ecommerce-react-app",
-    livePreview: "https://vinay-react-ecommerce.netlify.app/",
-  },
+
 ];
 
 const skills = [
