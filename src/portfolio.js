@@ -23,11 +23,18 @@ const projects = [
   // projects can be added an removed
   // if there are no projects, Projects section won't show up
   {
-    name: "Fraazo Clone",
-    description: "Buy fresh fruits & vegetables online at best price.",
-    stack: ["React", "Redux", "Material UI"],
-    sourceCode: "https://github.com/vinaykanth-s/fraazo-clone",
-    livePreview: "https://github.com/vinaykanth-s/",
+    name: "Project Manager Dashboard",
+    description: "Using this application a project manager can add, edit project & team details.",
+    stack: ["React", "ReduxToolKit", "Firebase", "Material UI"],
+    sourceCode: "https://github.com/vinaykanth-s/project-manager-dashboard",
+    livePreview: "https://vk-projects-manager.netlify.app/",
+  },
+  {
+    name: "eCommerce App",
+    description: "A typical ecommerce application where users can add products to cart and place an order.",
+    stack: ["React", "ReduxToolKit", "Firebase", "Material UI"],
+    sourceCode: "https://github.com/vinaykanth-s/ecommerce-react-app",
+    livePreview: "https://vinay-react-ecommerce.netlify.app/",
   },
 ];
 
@@ -42,6 +49,9 @@ const skills = [
   "Redux",
   "MobX",
   "Material UI",
+  "SASS/SCSS",
+  "Webpack", 
+  "Babel"
 ];
 
 const contact = {
